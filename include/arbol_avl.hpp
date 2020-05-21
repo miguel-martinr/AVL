@@ -195,9 +195,8 @@ void arbol_avl<Clave>::insert_bal(nodo_avl<Clave>* &nodo, nodo_avl<Clave>* nuevo
   if (nodo == NULL) {
     nodo = nuevo;
     crece = true;
-  } else if (nuevo) {
-    if (nuevo->get_dato() < nodo->get_dato())
-      insert_bal(nodo->izq_,nuevo,crece);
+  } else if (nuevo->get_dato() < nodo->get_dato()) {
+    insert_bal(nodo->izq_,nuevo,crece);
     crece ? insert_rebal_izq(nodo,crece) : (void)0;
   } else {
     insert_bal(nodo->dch_,nuevo,crece);

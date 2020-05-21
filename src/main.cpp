@@ -59,6 +59,8 @@ int demo(void) {
   bool quit = false;
   do {
     cout << endl;
+    cout << "\n           TRAZA AVL";
+    cout << "\n  Miguel Alejandro Martín Reyes\n\n";
     myTree.print();
 /*    cout << "\nEl árbol" << (myTree.equilibrado() ? "  " : " no ")
          << "está equilibrado.\n";*/
